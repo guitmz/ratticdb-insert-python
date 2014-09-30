@@ -3,7 +3,7 @@
 
 import os, pymysql
 
-conn = pymysql.connect(host='104.131.201.135', port=3306, user='rattic', passwd='bnd0h2hg', db='rattic')
+conn = pymysql.connect(host='rattic_server_ip', port=3306, user='ratticdb_user', passwd='ratticdb_password', db='ratticdb_name')
 cur = conn.cursor()
 
 def add(title, username, password, description, group_id, url):
